@@ -1,0 +1,80 @@
+.wrapper {
+
+    grid-template-columns: 830px 610px;
+
+    .izquierda {
+
+        grid-column: 1;
+        padding: 65px 220px 160px 160px;
+        background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(to right,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background-repeat: repeat-x;
+    
+        img {
+            margin-bottom: 135px;
+        }
+
+        h2 > span {
+            color: $desaturatedRed;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: 13px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 16px;
+            color: $desaturatedRed;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
+
+        input[type="email"] {
+            width: 400px;
+            padding: 20px 35px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 0 1px 1px $desaturatedRed;
+        }
+        
+        .form {
+            position: relative;
+        }
+
+        input[type="email"]::placeholder {
+            color: $desaturatedRed;
+        }
+
+        button {
+            width: 100px;
+            height: 55px;
+            position: absolute;
+            left: calc(450px - 25%);
+            box-shadow: 0 0 1px 1px $desaturatedRed;
+            border-radius: 50px;
+            border: none;
+            background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%))
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 55px;
+            background-image: url(/images/icon-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+    }   
+
+
+
+
+}

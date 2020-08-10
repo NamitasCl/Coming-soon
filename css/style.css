@@ -1,0 +1,124 @@
+/* 
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+ */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 641px) {
+  .wrapper {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.wrapper .derecha {
+  background-image: url(/images/hero-desktop.jpg);
+}
+
+.wrapper {
+  -ms-grid-columns: 830px 610px;
+      grid-template-columns: 830px 610px;
+}
+
+.wrapper .izquierda {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 65px 220px 160px 160px;
+  background-image: url(/images/bg-pattern-desktop.svg), -webkit-gradient(linear, left top, right top, from(white), to(#fff5f5));
+  background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(to right, white, #fff5f5);
+  background-repeat: repeat-x;
+}
+
+.wrapper .izquierda img {
+  margin-bottom: 135px;
+}
+
+.wrapper .izquierda h2 > span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.wrapper .izquierda h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.wrapper .izquierda p {
+  font-size: 16px;
+  color: #ce9797;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.wrapper .izquierda input[type="email"] {
+  width: 400px;
+  padding: 20px 35px;
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: 0 0 1px 1px #ce9797;
+          box-shadow: 0 0 1px 1px #ce9797;
+}
+
+.wrapper .izquierda .form {
+  position: relative;
+}
+
+.wrapper .izquierda input[type="email"]::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper .izquierda input[type="email"]:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper .izquierda input[type="email"]::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper .izquierda input[type="email"]::placeholder {
+  color: #ce9797;
+}
+
+.wrapper .izquierda button {
+  width: 100px;
+  height: 55px;
+  position: absolute;
+  left: calc(450px - 25%);
+  -webkit-box-shadow: 0 0 1px 1px #ce9797;
+          box-shadow: 0 0 1px 1px #ce9797;
+  border-radius: 50px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8c8c));
+  background-image: linear-gradient(to right, #f8bfbf, #ee8c8c);
+}
+
+.wrapper .izquierda button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 55px;
+  background-image: url(/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*# sourceMappingURL=style.css.map */
