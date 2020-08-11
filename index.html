@@ -15,23 +15,34 @@
 <body>
 
   <div class="wrapper">
+    
+    <div class="logo mobile">
+      <img src="/images/logo.svg" alt="Base Apparel logo">
+    </div>
+
+    <div class="derecha mobile">
+
+      
+
+    </div>
+
     <div class="izquierda">
 
-      <img src="/images/logo.svg" alt="Base Apparel logo">
+      <img class="desktop" src="/images/logo.svg" alt="Base Apparel logo">
 
-      <h2><span>We're </span>coming soon</h2>
+      <h2>We're <span>coming soon</span></h2>
 
       <p>
         Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
-      <form class="form"> 
-        <input type="email" placeholder="Email Address" required>
-        <button></button>
+      <form id="form" class="form" onsubmit="return validarCorreo()"> 
+        <input id="text" type="text" placeholder="Email Address">
+        <button id="boton"></button>
       </form>
     </div>
 
-    <div class="derecha">
+    <div class="derecha desktop">
 
 
 
@@ -42,6 +53,6 @@
 
 
   </div>
-  
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
